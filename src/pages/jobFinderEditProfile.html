@@ -11,18 +11,18 @@
         <div class="w3-container">
             <p class="w3-right-align"><b>رزومه</b></p><hr class="w3-border-light-blue">
             <form class="w3-form">
-                <label class="w3-right"><b>میزان تحصیلات</b></label>
-                <select class="w3-select" name="option">
-                    <option value="" disabled selected>میزان تحصیلات خود را انتخاب کنید</option>
-                    <option value="1"> ابتدایی</option>
-                    <option value="2">راهنمایی</option>
-                    <option value="3">دیپلم</option>
-                    <option value="4">فوق دیپلم</option>
-                    <option value="5">لیسانس</option>
-                    <option value="6">فوق لیسانس</option>
-                    <option value="7">دکتری</option>
-                </select>
-
+                <label><b class="w3-right">میزان تحصیلات</b>
+                    <select class="w3-select" name="option">
+                        <option value="" disabled selected>میزان تحصیلات خود را انتخاب کنید</option>
+                        <option value="1"> ابتدایی</option>
+                        <option value="2">راهنمایی</option>
+                        <option value="3">دیپلم</option>
+                        <option value="4">فوق دیپلم</option>
+                        <option value="5">لیسانس</option>
+                        <option value="6">فوق لیسانس</option>
+                        <option value="7">دکتری</option>
+                    </select>
+                </label>
                 <br>
                 <br>
 
@@ -52,16 +52,20 @@
                 <label class="w3-right"><b>سوابق</b></label><br>
                 <div class="w3-card-2 w3-row w3-right-align w3-leftbar w3-border-light-blue w3-margin">
                     <div class="w3-third w3-padding">
-                        <label class="w3-validate">تاریخ</label>
-                        <input class="w3-input w3-border-teal w3-margin-bottom w3-right-align" type="date">
-                        <label class="w3-validate">تاریخ</label>
-                        <input class="w3-input w3-border-teal w3-margin-bottom w3-right-align" type="date">
+                        <label class="w3-validate">تاریخ
+                            <input class="w3-input w3-border-teal w3-margin-bottom w3-right-align" type="date">
+                        </label>
+                        <label class="w3-validate">تاریخ
+                            <input class="w3-input w3-border-teal w3-margin-bottom w3-right-align" type="date">
+                        </label>
                     </div>
                     <div class="w3-twothird w3-padding">
-                        <label class="w3-validate">محل کار</label>
-                        <input class="w3-input w3-border-teal w3-margin-bottom w3-right-align" type="text">
-                        <label class="w3-validate">مسئولیت</label>
-                        <input class="w3-input w3-border-teal w3-margin-bottom w3-right-align" type="text">
+                        <label class="w3-validate">محل کار
+                            <input class="w3-input w3-border-teal w3-margin-bottom w3-right-align" type="text">
+                        </label>
+                        <label class="w3-validate">مسئولیت
+                            <input class="w3-input w3-border-teal w3-margin-bottom w3-right-align" type="text">
+                        </label>
                     </div>
                 </div>
                 <div class="w3-btn-floating w3-card-2 w3-teal w3-right">+</div><br><br><br>
@@ -81,34 +85,41 @@
             <p class="w3-right-align"><b>اطلاعات پایه</b></p><hr class="w3-border-light-blue">
 
             <form class="w3-right-align w3-form">
-                <label class="w3-validate">مرد</label>
-                <input type="radio" name="gender" value="male" class="w3-radio" checked><br>
-                <label class="w3-validate">زن</label>
-                <input type="radio" name="gender" value="female" class="w3-radio">
+                <label class="w3-validate">مرد
+                    <input type="radio" name="gender" value="male" class="w3-radio" checked><br>
+                </label>
+                <label class="w3-validate">زن
+                    <input type="radio" name="gender" value="female" class="w3-radio">
+                </label>
 
                 <div class="w3-section">
                     <label class="w3-right"><b>نام و نام خانوادگی*</b></label>
                     <input class="w3-input w3-border-teal w3-margin-bottom w3-right-align" type="email" placeholder="نام و نام خانوادگی خود را وارد کنید">
 
-                    <label class="w3-right"><b>تاریخ تولد</b></label>
-                    <input class="w3-input w3-border-teal w3-right-align w3-margin-bottom" type="date">
+                    <label><b class="w3-right">تاریخ تولد</b>
+                        <input class="w3-input w3-border-teal w3-right-align w3-margin-bottom" type="date">
+                    </label>
 
-                    <label class="w3-right"><b>شماره تلفن</b></label>
-                    <input class="w3-input w3-border-teal w3-right-align w3-margin-bottom" type="tel" placeholder="تلفن خود را وارد کنید">
+                    <label><b class="w3-right">شماره تلفن</b>
+                        <input class="w3-input w3-border-teal w3-right-align w3-margin-bottom" type="tel" placeholder="تلفن خود را وارد کنید">
+                    </label>
 
                     <label class="w3-right"><b>آدرس</b></label><br>
                     <div class="w3-row">
                         <div class="w3-third w3-padding">
-                            <label class="w3-validate">ادامه آدرس</label>
-                            <input class="w3-input w3-border-teal w3-margin-bottom w3-right-align" type="text">
+                            <label class="w3-validate">ادامه آدرس
+                                <input class="w3-input w3-border-teal w3-margin-bottom w3-right-align" type="text">
+                            </label>
                         </div>
                         <div class="w3-third w3-padding">
-                            <label class="w3-validate">شهر</label>
-                            <input class="w3-input w3-border-teal w3-margin-bottom w3-right-align" type="text">
+                            <label class="w3-validate">شهر
+                                <input class="w3-input w3-border-teal w3-margin-bottom w3-right-align" type="text">
+                            </label>
                         </div>
                         <div class="w3-third w3-padding">
-                            <label class="w3-validate">استان</label>
-                            <input class="w3-input w3-border-teal w3-margin-bottom w3-right-align" type="text">
+                            <label class="w3-validate">استان
+                                <input class="w3-input w3-border-teal w3-margin-bottom w3-right-align" type="text">
+                            </label>
                         </div>
                     </div>
 
