@@ -199,6 +199,15 @@
 
             }
         }
+        else if(email == "team@gmail.com"){
+            if(password == "789"){
+                window.location.assign("teamProfile.html");
+            }
+            else{
+                document.getElementById('errorPanel').style.display = 'block';
+
+            }
+        }
         else{
             document.getElementById('errorPanel').style.display = 'block';
         }
