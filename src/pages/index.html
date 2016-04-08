@@ -84,15 +84,15 @@
 
                         <div class="w3-section">
                             <label class="w3-right"><b>نام کاربری</b></label>
-                            <input class="w3-input w3-border-teal w3-margin-bottom w3-right-align" type="email" placeholder="ایمیل خود را وارد کنید">
+                            <input class="w3-input w3-border-teal w3-margin-bottom w3-right-align" required type="email" placeholder="ایمیل خود را وارد کنید">
 
                             <label class="w3-right"><b>رمز عبور</b></label>
-                            <input class="w3-input w3-border-teal w3-right-align w3-margin-bottom" type="password" placeholder="رمز خود را وارد کنید">
+                            <input class="w3-input w3-border-teal w3-right-align w3-margin-bottom" required type="password" placeholder="رمز خود را وارد کنید">
 
                             <label class="w3-right"><b>تکرار رمز عبور</b></label>
-                            <input class="w3-input w3-border-teal w3-right-align w3-margin-bottom" type="password" placeholder="رمز خود را تکرار کنید">
+                            <input class="w3-input w3-border-teal w3-right-align w3-margin-bottom" required type="password" placeholder="رمز خود را تکرار کنید">
 
-                            <button class="w3-btn w3-btn-block w3-green">تکمیل اطلاعات کاربری >></button>
+                            <button class="w3-btn w3-btn-block w3-green" type="submit">تکمیل اطلاعات کاربری >></button>
                         </div>
                     </form>
                     <form style="display: none;">
@@ -113,14 +113,17 @@
             <br>
             <div class="w3-container">
                 <div class="w3-section">
+                    <div id="errorPanel" class="w3-red w3-right-align w3-padding" style="display: none">
+                        <p>نام کاربری یا رمز عبور اشتباه است</p>
+                    </div>
                     <form>
                         <label class="w3-right"><b>نام کاربری</b></label>
-                        <input class="w3-input w3-border-teal w3-margin-bottom w3-right-align" type="email" placeholder="ایمیل خود را وارد کنید">
+                        <input id="email" class="w3-input w3-border-teal w3-margin-bottom w3-right-align" type="email" placeholder="ایمیل خود را وارد کنید">
 
                         <label class="w3-right"><b>رمز عبور</b></label>
-                        <input class="w3-input w3-border-teal w3-right-align w3-margin-bottom" type="password" placeholder="رمز خود را وارد کنید">
+                        <input id="password" class="w3-input w3-border-teal w3-right-align w3-margin-bottom" type="password" placeholder="رمز خود را وارد کنید">
 
-                        <button class="w3-btn w3-btn-block w3-green">ورود</button>
+                        <button class="w3-btn w3-btn-block w3-green" type="button" onclick="tempRedirect('email','password')">ورود</button>
                         <div class="w3-row">
                             <input class="w3-left w3-check w3-margin-top" type="checkbox" checked="checked">
                             <p class=" w3-left w3-center w3-margin-top">من را به خاطر بسپار</p>
@@ -173,5 +176,33 @@
 
         window.onload = repeat();
     </script>
+
+<script>
+    function tempRedirect(emailId, passwordId){
+        var email = document.getElementById(emailId).value;
+        var password = document.getElementById(passwordId).value;
+
+        if (email == "karjo@gmail.com"){
+            if(password == "123"){
+                window.location.assign("jobFinderProfile.html");
+            }
+            else{
+                document.getElementById('errorPanel').style.display = 'block';
+            }
+        }
+        else if(email == "karfarma@gmail.com"){
+            if(password == "456"){
+                window.location.assign("employerProfile.html");
+            }
+            else{
+                document.getElementById('errorPanel').style.display = 'block';
+
+            }
+        }
+        else{
+            document.getElementById('errorPanel').style.display = 'block';
+        }
+    }
+</script>
 </body>
 </html>
