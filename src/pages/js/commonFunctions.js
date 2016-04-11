@@ -1,6 +1,8 @@
 /**
- * Created by SAEED on 2016-04-08.
- */
+    * Created by SAEED
+    * for JobSocialNetwork
+    * on 2016-04-08, 14:16.
+    */
 function createTag(tagId, tagAreaId) {
     var text = document.getElementById(tagId).value;
     document.getElementById(tagId).value = '';
