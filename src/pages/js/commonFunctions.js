@@ -20,8 +20,8 @@ function createTag(tagId, tagAreaId) {
     tagDiv.appendChild(div);
 }
 
-function cityAndRegionSelection(Shahrestanha) {
-    var _Shahrestan = document.getElementById("Shahrestan");
+function cityAndRegionSelection(Shahrestanha, regionSelectId) {
+    var _Shahrestan = document.getElementById(regionSelectId);
     _Shahrestan.options.length = 0;
     if(Shahrestanha != "") {
         Shahrestanha = 'شهر را انتخاب کنید,'+ Shahrestanha;
