@@ -35,6 +35,18 @@
             </button>
             <button class="w3-btn w3-blue-grey" type="button" onclick="window.location.assign('index.html')">خروج
             </button>
+            <button class="w3-btn w3-blue-grey" type="button" onclick="{
+
+                    if(this.value == 1){
+                        this.children[1].innerHTML = 'دنبال کردن آگهی‌های این صفحه';
+                        this.value = 0;
+                    }
+                    else {
+                        this.children[1].innerHTML = 'دنبال نکردن آگهی‌های این صفحه';
+                        this.value = 1;
+                    }
+            }" value="1"><span class="fa fa-share-square-o"></span>&nbsp;<span>دنبال کردن آگهی‌های این صفحه</span></button>
+
             <br>
             <br>
             <div class="w3-text-black w3-card-2 w3-rightbar w3-border-teal w3-right-align w3-padding">
